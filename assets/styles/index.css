@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 html, input, button {
@@ -11,8 +12,13 @@ html, input, button {
 body {
     height: 100vh;
     width: 100vw;
-    background-color: #F9F9F9;
-    position: relative;
+    /* background-color: #F9F9F9; */
+    background-image: url("/assets/images/fundo.jpeg");
+    background-repeat: no-repeat;
+    background-position:top;
+background-size: 100%; 
+   
+ position: relative;
 }
 .container {
     height: 100%;
@@ -105,8 +111,8 @@ header h1 {
     position: absolute;
     bottom: 32px;
     right: 32px;
-    width: 322px;
-    height: 141px;
+    width: 30%;
+    height: 25%;
     background: #fff;
     box-shadow: 7.9px 15.8px 15.8px hsl(0deg 0% 0% / 0.25);
 }
