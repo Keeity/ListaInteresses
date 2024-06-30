@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    border: none;
 }
 
 html, input, button {
@@ -11,13 +13,16 @@ html, input, button {
 body {
     height: 100vh;
     width: 100vw;
-    background-color: #F9F9F9;
-    position: relative;
+    background-image: url("/assets/images/fundo.jpeg");
+    background-repeat: no-repeat;
+    background-position:unset;
+background-size: 100%; 
+   
+ position: relative;
 }
 .container {
-    height: 100%;
-    width: 100%;
-    max-width: 720px;
+    height:100vw;
+    width:985px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -39,55 +44,71 @@ header h1 {
     margin-top: 16px;
 }
 
-.form {
+.interestsForm {
     display: flex;
     gap: 16px;
     margin-bottom: 32px;
     width: 100%;
+    min-width: 1000px;
+    font-size: 16px;
 }
 
-.form input {
+.interestsForm input {
     border: 0;
     min-height: 52px;
     width: 100%;
     color: #44546A;
     border-radius: 5px;
     padding: 16px 24px;
+    box-shadow: 3.9px 7.8px 7.8px hsla(0, 1%, 37%, 0.25);
+    
 }
 
-.form button {
+.interestsForm button {
     background: #F40273;
     color: #fff;
     padding: 16px 32px;
     border-radius: 5px; 
+    min-height: 45px;
+
+    min-width: 140px;
     border: 0;
     cursor: pointer;
     animation: filter 0.5s ease;
+    box-shadow: 3.9px 7.8px 7.8px hsla(0, 1%, 37%, 0.25);
 }
-.form button:hover {
+.interestsForm button:hover {
     filter: brightness(0.8);
+    font-weight: bold; 
 }
 .list {
-    width: 100%;
-    max-width: 720px;
-    margin: 0 auto;
+    width: 995px;
+    padding-left: 14px;
+    box-shadow: -3.9px 0 7.8px linear-gradient(to right,hsla(0, 1%, 37%, 0.25), transparent);
+    background-image: linear-gradient(to right, hsla(300, 65%, 77%, 0.325), transparent);
 }
 
 .list div {
     display: flex;
     justify-content: space-between;
     padding: 16px 0;
-    margin-bottom: 32px;
 }
 
 .list div button {
     color: #F40273;
+    background: #f6f3f4;
+    background: transparent(8.2);
+    padding: 16px 32px;
+    border-radius: 5px; 
     border: 0;
-    background: transparent;
+    min-height: 45px;
     cursor: pointer;
+    animation: filter 0.5s ease;
+    box-shadow: 3.9px 7.8px 7.8px hsla(0, 1%, 37%, 0.25);
 }
 .list div button:hover {
-    filter: brightness(0.8);
+    filter: brightness(0.9);
+    font-weight: bold; 
 }
 
 .list ul {
@@ -95,36 +116,65 @@ header h1 {
 }
 
 .list ul li {
-    padding: 16px;
-    background: #fff;
+    padding: 10px;
     border-radius: 5px;
     color: #44546A;
+    font-size: 16px;
+}
+
+li::before {
+  content:url("/assets/images/coco.png");
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding: 3px 8px;
+  gap: 8px;
+
 }
 
 .news {
     position: absolute;
-    bottom: 32px;
-    right: 32px;
-    width: 322px;
-    height: 141px;
-    background: #fff;
+    bottom: 100px;
+    right: 50px;
+    width: 14%;
+    height: 20%;
+    background: #F5F5F5;
     box-shadow: 7.9px 15.8px 15.8px hsl(0deg 0% 0% / 0.25);
+
+    border-radius: 3px;
 }
 
+
 .news div {
+    text-align: right;
     display: flex;
     align-items: center;
     padding: 8px;
-    font-size: 12px;
+    font-size: 10px;
     background: #F5F5F5;
-    color: #112BDA;
-    font-weight: bold;
+    color: #09124c;
+
+}
+aside :hover {
+    filter: brightness(0.9);
+    font-weight: bold; 
 }
 
+.news a { 
+    cursor: pointer
+}
 .news p {
     padding: 16px;
     width: 100%;
-    text-overflow: ellipsis;
-    font-size: 14px;
-    color: #44546A;
+    font-size: 12px;
+    color: #22262d;
+    font-weight: bold; 
+}
+
+.news img{
+
+    width: 100%;
+    max-height: 90px;
+    border-radius: 8px;
+    object-fit:contain; 
+    object-position: center;
 }
