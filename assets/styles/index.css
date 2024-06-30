@@ -92,7 +92,7 @@ header h1 {
     padding: 16px 32px;
     /* box-shadow: -3.9px 0 7.8px hsla(0, 1%, 37%, 0.25); */
     /* box-shadow: 0 0 10px hsla(0, 1%, 37%, 0.25); */
-    background-image: linear-gradient(to right, hsla(300, 50%, 77%, 0.25), transparent);
+    background-image: linear-gradient(to right, hsla(300, 11%, 96%, 0.25), transparent);
 }
 
 .list div {
@@ -125,9 +125,18 @@ header h1 {
 
 .list ul li {
     padding: 16px;
-    background: #fff;
+    /* background: #fff; */
     border-radius: 5px;
     color: #44546A;
+}
+
+li::before {
+  content:url("/assets/images/coco.png");
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding: 3px 8px;
+  gap: 8px;
+
 }
 
 .news {
@@ -141,6 +150,7 @@ header h1 {
 
     border-radius: 3px;
 }
+
 
 .news div {
     text-align: right;
