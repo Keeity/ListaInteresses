@@ -9,36 +9,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <main class="container">
         <header>
             <img src="assets/images/logotipo.png" alt="LAB365">
             <h1>Meus Interesses e Hobbies</h1>
         </header>
-        <div class="form">
-            <input type="text" placeholder="Digite algum interesse ou hobbie">
-            <button class="button-add">Adicionar</button>
+
+        <div class="interestsForm">
+            <input type="text" id="interestI" placeholder="Digite algum interesse ou hobbie">
+            <button id="addBtn">Adicionar</button>
         </div>
 
         <div class="list">
-            <div>
+            <div >
                 <strong>Lista:</strong>
-                <button class="button-clear">Limpar lista</button>
+                <button id="clearBtn">Limpar lista</button>
             </div>
-            <ul>
+            <ul id="list">
                <!-- Inclua os interesses aqui -->
             </ul>
         </div>
     </main>
 
-    <div class="news">
-        <div>
-            <span>Noticia patrocinada</span>
-        </div>
-        <p class="title-news-today">
+    <aside class="aside">
+        <div class="news">
+           <div>
+                <span>Noticia patrocinada</span>
+            </div>
+            <a id="newsRef" href="#" target="_blank">
+                 <p id= "todayNews">
             <!-- Inclua aqui a noticia em destaque -->
-        </p>
-    </div>
+            </p> 
+             </a>
+           <div >
+            <img  id="newsImage" alt="Imagem da notícia">
+           </div>
+        </div>
+    </aside>
 
     <script src="/scripts/main.js" type="module"></script>
 </body>
